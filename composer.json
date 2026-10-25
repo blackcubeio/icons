@@ -1,0 +1,59 @@
+{
+    "name": "blackcube/icons",
+    "description": "Icon sets and SVG renderer for Yii framework",
+    "keywords": [
+        "yii",
+        "icons",
+        "svg",
+        "heroicons"
+    ],
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "readme": "README.md",
+    "homepage": "https://github.com/blackcubeio/icons",
+    "support": {
+        "issues": "https://github.com/blackcubeio/icons/issues",
+        "source": "https://github.com/blackcubeio/icons"
+    },
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "philippe@blackcube.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "yiisoft/html": "^4.2"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.3",
+        "codeception/module-asserts": "^3.3",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blackcube\\Icons\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blackcube\\Icons\\Tests\\": "tests"
+        }
+    },
+    "bin": [
+        "bin/update-heroicons"
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2"
+        }
+    }
+}
